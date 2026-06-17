@@ -1,930 +1,524 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CV de Camille Dupont — Développeuse web front-end spécialisée HTML5, CSS3, accessibilité."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Cache-Control" content="no-store" />
-    <meta name="theme-color" content="#4b44c4" />
-    <meta property="og:title" content="Camille Dupont — Développeuse web" />
-    <meta
-      property="og:description"
-      content="CV en ligne de Camille Dupont, développeuse front-end."
-    />
-    <meta property="og:type" content="profile" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Camille Dupont — Développeuse web" />
-    <title>Camille Dupont — Développeuse web front-end</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/print.css" media="print" />
-    <link rel="canonical" href="https://camille-dupont.dev/" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Camille Dupont",
-        "jobTitle": "Développeuse web front-end",
-        "url": "https://camille-dupont.dev/",
-        "email": "camille@dupont.dev",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lyon",
-          "addressCountry": "FR"
-        },
-        "sameAs": [
-          "https://github.com/camille-dupont",
-          "https://linkedin.com/in/camille-dupont"
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Aller au contenu principal</a>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CV de Camille Dupont — Développeuse web front-end spécialisée HTML5, CSS3, accessibilité."/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#4b44c4"/>
+  <meta property="og:title" content="Camille Dupont — Développeuse web"/>
+  <meta property="og:description" content="CV en ligne de Camille Dupont, développeuse front-end."/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Camille Dupont — Développeuse web"/>
+  <title>Camille Dupont — Développeuse web front-end</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/print.css" media="print"/>
+  <link rel="canonical" href="https://camille-dupont.dev/"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Camille Dupont",
+    "jobTitle": "Développeuse web front-end",
+    "url": "https://camille-dupont.dev/",
+    "email": "camille@dupont.dev",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lyon", "addressCountry": "FR" },
+    "sameAs": ["https://github.com/camille-dupont", "https://linkedin.com/in/camille-dupont"]
+  }
+  </script>
+</head>
+<body>
 
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-      <div class="site-header__inner">
-        <div class="site-header__identity">
-          <picture>
-            <source srcset="assets/img/face.webp" type="image/webp" />
-            <img
-              class="site-header__avatar"
-              src="assets/img/face.jpg"
-              alt=""
-              width="48"
-              height="48"
-              loading="eager"
-              decoding="async"
-              aria-hidden="true"
-            />
-          </picture>
-          <div class="site-header__titles">
-            <h1 class="site-header__name">Camille <strong>Dupont</strong></h1>
-            <p class="site-header__subtitle">
-              Développeuse web <abbr title="Front-End">FE</abbr>
-            </p>
-          </div>
-        </div>
-        <div class="theme-toggle">
-          <input
-            type="checkbox"
-            id="dark-toggle"
-            role="switch"
-            aria-label="Activer le mode sombre"
-          />
-          <label for="dark-toggle" title="Basculer le thème">🌙</label>
-        </div>
-        <nav class="nav-main" aria-label="Navigation principale">
-          <input
-            type="checkbox"
-            id="nav-toggle"
-            class="nav-main__input"
-            aria-label="Ouvrir le menu"
-          />
-          <label for="nav-toggle" class="nav-main__burger" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </label>
-          <ul class="nav-main__list" role="list">
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#apropos">À propos</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#experiences">Expériences</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#formations">Formations</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#competences">Compétences</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#projets">Projets</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
 
-    <main id="main" tabindex="-1">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="hero-titre">
-        <div class="hero__inner">
-          <div class="hero__photo">
-            <picture>
-              <source srcset="assets/img/face.webp" type="image/webp" />
-              <img
-                class="hero__img"
-                src="assets/img/face.jpg"
-                alt="Portrait de Camille Dupont"
-                width="140"
-                height="140"
-                loading="eager"
-                fetchpriority="high"
-                decoding="sync"
-              />
-            </picture>
-          </div>
-          <div class="hero__text">
-            <h2 class="hero__title" id="hero-titre">
-              Développeuse web <mark class="hero__mark">front-end</mark>
-            </h2>
-            <p class="hero__lead">
-              HTML5 sémantique · CSS3 natif · Zéro dépendance inutile
-            </p>
-            <ul class="hero__badges" role="list">
-              <li class="badge">Lighthouse 100</li>
-              <li class="badge">WCAG AA</li>
-              <li class="badge">Flexbox</li>
-              <li class="badge">CSS-only tricks</li>
-              <li class="badge">Open source</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- SCORE LIGHTHOUSE -->
-      <section class="section section--lh" aria-labelledby="lh-titre">
-        <div class="section__inner">
-          <h2 class="section__title section__title--sm" id="lh-titre">
-            Score Lighthouse
-          </h2>
-          <div
-            class="lighthouse"
-            role="img"
-            aria-label="Score Lighthouse : 100 en Performance, Accessibilité, Bonnes pratiques et SEO"
-          >
-            <div class="lighthouse__score">
-              <div class="lighthouse__circle">100</div>
-              <span class="lighthouse__label">Performance</span>
-            </div>
-            <div class="lighthouse__score">
-              <div class="lighthouse__circle">100</div>
-              <span class="lighthouse__label">Accessibilité</span>
-            </div>
-            <div class="lighthouse__score">
-              <div class="lighthouse__circle">100</div>
-              <span class="lighthouse__label">Bonnes pratiques</span>
-            </div>
-            <div class="lighthouse__score">
-              <div class="lighthouse__circle">100</div>
-              <span class="lighthouse__label">SEO</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- À PROPOS -->
-      <section class="section" id="apropos" aria-labelledby="titre-apropos">
-        <div class="section__inner section__inner--row">
-          <aside class="contact-card">
-            <address class="contact-card__address">
-              <ul class="contact-card__list" role="list">
-                <li class="contact-card__item">
-                  <a
-                    href="mailto:camille@dupont.dev"
-                    aria-label="Email de Camille Dupont"
-                    >📧 camille@dupont.dev</a
-                  >
-                </li>
-                <li class="contact-card__item">
-                  <a
-                    href="tel:+33612345678"
-                    aria-label="Téléphone de Camille Dupont"
-                    >📱 +33 6 12 34 56 78</a
-                  >
-                </li>
-                <li class="contact-card__item">📍 Lyon, France</li>
-                <li class="contact-card__item">
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub (nouvelle fenêtre)"
-                    >🐙 GitHub</a
-                  >
-                </li>
-                <li class="contact-card__item">
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn (nouvelle fenêtre)"
-                    >💼 LinkedIn</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <a
-              class="btn btn--primary"
-              href="#dialog-dl"
-              aria-label="Ouvrir la fenêtre de téléchargement du CV"
-              >⬇ Télécharger le CV</a
-            >
-          </aside>
-          <article class="about" aria-labelledby="titre-apropos">
-            <h2 class="section__title" id="titre-apropos">À propos</h2>
-            <p>
-              Développeuse front-end passionnée par les
-              <mark>standards web ouverts</mark>, l'accessibilité et les
-              performances natives. Zéro framework superflu :
-              <strong>HTML5, CSS3, JavaScript vanilla</strong>.
-            </p>
-            <blockquote
-              class="quote"
-              cite="https://www.w3.org/TR/html-design-principles/"
-            >
-              <p>
-                <q
-                  >Le web doit être accessible à tous, quelles que soient les
-                  capacités ou le contexte.</q
-                >
-              </p>
-              <footer class="quote__footer">
-                — <cite>W3C Design Principles</cite>
-              </footer>
-            </blockquote>
-            <p>
-              Convaincue que la maîtrise des <dfn>standards natifs</dfn> est
-              plus durable que la maîtrise d'un framework. Chaque projet est une
-              opportunité de prouver qu'on peut faire <em>mieux avec moins</em>.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- EXPÉRIENCES -->
-      <section class="section" id="experiences" aria-labelledby="titre-exp">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-exp">Expériences</h2>
-          <ol class="timeline" role="list">
-            <li class="timeline__item">
-              <article class="timeline__card">
-                <header class="timeline__header">
-                  <h3 class="timeline__role">
-                    Développeuse front-end — <span>Acme Corp</span>
-                  </h3>
-                  <p class="timeline__meta">
-                    <time datetime="2022-03">Mars 2022</time> –
-                    <time datetime="2024-12">Décembre 2024</time>
-                    <small
-                      >(Lyon ·
-                      <abbr title="Télétravail 3 jours sur 5">remote 3j/5</abbr
-                      >)</small
-                    >
-                  </p>
-                </header>
-                <details class="timeline__details">
-                  <summary class="timeline__summary">Voir les missions</summary>
-                  <ul class="timeline__missions">
-                    <li>
-                      Intégration
-                      <abbr title="HyperText Markup Language 5">HTML5</abbr
-                      >/<abbr title="Cascading Style Sheets 3">CSS3</abbr> de
-                      maquettes Figma
-                    </li>
-                    <li>
-                      Audit accessibilité
-                      <abbr title="Web Content Accessibility Guidelines"
-                        >WCAG</abbr
-                      >
-                      2.1 AA
-                    </li>
-                    <li>
-                      Réduction du
-                      <abbr title="Largest Contentful Paint">LCP</abbr> de
-                      <del>4,2 s</del> à <ins>1,1 s</ins>
-                    </li>
-                    <li>
-                      Mise en place de <code>@layer</code> + variables CSS pour
-                      toute la design system
-                    </li>
-                  </ul>
-                </details>
-              </article>
-            </li>
-            <li class="timeline__item">
-              <article class="timeline__card">
-                <header class="timeline__header">
-                  <h3 class="timeline__role">
-                    Intégratrice web — Agence Pixel
-                  </h3>
-                  <p class="timeline__meta">
-                    <time datetime="2020-09">Sept. 2020</time> –
-                    <time datetime="2022-02">Fév. 2022</time>
-                    <small>(Lyon)</small>
-                  </p>
-                </header>
-                <details class="timeline__details">
-                  <summary class="timeline__summary">Voir les missions</summary>
-                  <ul class="timeline__missions">
-                    <li>
-                      Création de templates email
-                      <abbr title="HyperText Markup Language">HTML</abbr>
-                    </li>
-                    <li>
-                      Responsive design mobile-first,
-                      <var>breakpoints</var> avec <code>clamp()</code>
-                    </li>
-                    <li>
-                      Maintenance et évolution de sites
-                      <abbr title="Content Management System">CMS</abbr>
-                    </li>
-                  </ul>
-                </details>
-              </article>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- FORMATIONS -->
-      <section class="section" id="formations" aria-labelledby="titre-form">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-form">Formations</h2>
-          <dl class="formations">
-            <div class="formations__item">
-              <dt class="formations__year">
-                <time datetime="2020">2020</time> —
-                <abbr title="Développeur Web et Web Mobile">DWWM</abbr>
-              </dt>
-              <dd class="formations__detail">
-                <cite>AFPA Lyon</cite> — titre professionnel niveau 5
-                <small>(Bac+2 équivalent)</small>
-              </dd>
-            </div>
-            <div class="formations__item">
-              <dt class="formations__year">
-                <time datetime="2019">2019</time> — Baccalauréat
-                <abbr
-                  title="Sciences et Technologies du Management et de la Gestion"
-                  >STMG</abbr
-                >
-              </dt>
-              <dd class="formations__detail">
-                <cite>Lycée Jean Moulin, Lyon</cite> — mention Bien
-              </dd>
-            </div>
-            <div class="formations__item">
-              <dt class="formations__year">
-                <time datetime="2023">2023</time> — Certification
-                <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
-                2.1
-              </dt>
-              <dd class="formations__detail">
-                <cite>Access42</cite> — audit et conception accessible
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <!-- COMPÉTENCES -->
-      <section class="section" id="competences" aria-labelledby="titre-comp">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-comp">Compétences</h2>
-
-          <h3 class="section__subtitle">Techniques</h3>
-          <dl class="skills">
-            <div class="skills__item">
-              <dt class="skills__name"><dfn>HTML5</dfn></dt>
-              <dd class="skills__bar">
-                <label for="skill-html" class="sr-only"
-                  >Niveau HTML5 : 95 sur 100</label
-                >
-                <meter
-                  id="skill-html"
-                  min="0"
-                  max="100"
-                  value="95"
-                  low="40"
-                  high="70"
-                  optimum="100"
-                >
-                  95%
-                </meter>
-                <output class="skills__output" for="skill-html"
-                  >95 / 100</output
-                >
-              </dd>
-            </div>
-            <div class="skills__item">
-              <dt class="skills__name"><dfn>CSS3</dfn></dt>
-              <dd class="skills__bar">
-                <label for="skill-css" class="sr-only"
-                  >Niveau CSS3 : 90 sur 100</label
-                >
-                <meter
-                  id="skill-css"
-                  min="0"
-                  max="100"
-                  value="90"
-                  low="40"
-                  high="70"
-                  optimum="100"
-                >
-                  90%
-                </meter>
-                <output class="skills__output" for="skill-css">90 / 100</output>
-              </dd>
-            </div>
-            <div class="skills__item">
-              <dt class="skills__name">JavaScript</dt>
-              <dd class="skills__bar">
-                <label for="skill-js" class="sr-only"
-                  >Niveau JavaScript : 75 sur 100</label
-                >
-                <meter
-                  id="skill-js"
-                  min="0"
-                  max="100"
-                  value="75"
-                  low="40"
-                  high="70"
-                  optimum="100"
-                >
-                  75%
-                </meter>
-                <output class="skills__output" for="skill-js">75 / 100</output>
-              </dd>
-            </div>
-            <div class="skills__item">
-              <dt class="skills__name">Git</dt>
-              <dd class="skills__bar">
-                <label for="skill-git" class="sr-only"
-                  >Niveau Git : 80 sur 100</label
-                >
-                <meter
-                  id="skill-git"
-                  min="0"
-                  max="100"
-                  value="80"
-                  low="40"
-                  high="70"
-                  optimum="100"
-                >
-                  80%
-                </meter>
-                <output class="skills__output" for="skill-git">80 / 100</output>
-              </dd>
-            </div>
-          </dl>
-
-          <h3 class="section__subtitle">Langues</h3>
-          <table class="lang-table">
-            <caption class="lang-table__caption">
-              Niveaux selon le
-              <abbr title="Cadre Européen Commun de Référence pour les Langues"
-                >CECRL</abbr
-              >
-            </caption>
-            <colgroup>
-              <col class="lang-table__col lang-table__col--lang" />
-              <col class="lang-table__col lang-table__col--level" />
-              <col class="lang-table__col lang-table__col--detail" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col">Langue</th>
-                <th scope="col">Niveau</th>
-                <th scope="col">Détail</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Français</td>
-                <td><abbr title="Langue maternelle">C2</abbr></td>
-                <td>Langue maternelle</td>
-              </tr>
-              <tr>
-                <td>Anglais</td>
-                <td><abbr title="Autonome">B2</abbr></td>
-                <td>Lu, écrit, parlé — technique courant</td>
-              </tr>
-              <tr>
-                <td>Espagnol</td>
-                <td><abbr title="Utilisateur élémentaire">A2</abbr></td>
-                <td>Notions scolaires</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3">
-                  <small>Référentiel : <cite>Conseil de l'Europe</cite></small>
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </section>
-
-      <!-- PROJETS -->
-      <section class="section" id="projets" aria-labelledby="titre-proj">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-proj">Projets</h2>
-          <ul class="cards" role="list">
-            <li class="cards__item">
-              <article class="card" aria-labelledby="proj-1-titre">
-                <figure class="card__figure">
-                  <div
-                    class="card__placeholder card__placeholder--purple"
-                    aria-hidden="true"
-                  >
-                    🌐
-                  </div>
-                  <figcaption class="card__figcaption">
-                    Score Lighthouse : 100/100/100/100
-                  </figcaption>
-                </figure>
-                <div class="card__body">
-                  <h3 class="card__title" id="proj-1-titre">Ce CV en ligne</h3>
-                  <p class="card__desc">
-                    HTML5 sémantique, CSS3 natif,
-                    <abbr title="zéro">0</abbr> dépendance.
-                  </p>
-                  <ul class="tags" role="list">
-                    <li class="tags__item"><kbd>HTML5</kbd></li>
-                    <li class="tags__item"><kbd>Flexbox</kbd></li>
-                    <li class="tags__item"><kbd>a11y</kbd></li>
-                  </ul>
-                  <a
-                    class="card__link"
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Code source sur GitHub (nouvelle fenêtre)"
-                    >Voir le code →</a
-                  >
-                </div>
-              </article>
-            </li>
-            <li class="cards__item">
-              <article class="card" aria-labelledby="proj-2-titre">
-                <figure class="card__figure">
-                  <div
-                    class="card__placeholder card__placeholder--pink"
-                    aria-hidden="true"
-                  >
-                    ✅
-                  </div>
-                  <figcaption class="card__figcaption">
-                    Application vanilla JS — localStorage
-                  </figcaption>
-                </figure>
-                <div class="card__body">
-                  <h3 class="card__title" id="proj-2-titre">TaskFlow</h3>
-                  <p class="card__desc">
-                    Gestionnaire de tâches
-                    <abbr title="Single Page Application">SPA</abbr> vanilla.
-                  </p>
-                  <ul class="tags" role="list">
-                    <li class="tags__item"><kbd>JavaScript</kbd></li>
-                    <li class="tags__item"><kbd>localStorage</kbd></li>
-                    <li class="tags__item"><kbd>Drag &amp; Drop</kbd></li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-            <li class="cards__item">
-              <article class="card" aria-labelledby="proj-3-titre">
-                <figure class="card__figure">
-                  <div
-                    class="card__placeholder card__placeholder--green"
-                    aria-hidden="true"
-                  >
-                    🔒
-                  </div>
-                  <figcaption class="card__figcaption">
-                    Outil en ligne de commande Node.js
-                  </figcaption>
-                </figure>
-                <div class="card__body">
-                  <h3 class="card__title" id="proj-3-titre">md2pdf</h3>
-                  <p class="card__desc">
-                    Convertit du Markdown en
-                    <abbr title="Portable Document Format">PDF</abbr> protégé.
-                  </p>
-                  <ul class="tags" role="list">
-                    <li class="tags__item"><kbd>Node.js</kbd></li>
-                    <li class="tags__item"><kbd>Playwright</kbd></li>
-                    <li class="tags__item"><kbd>AES-256</kbd></li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CENTRES D'INTÉRÊT -->
-      <section class="section" id="interets" aria-labelledby="titre-interets">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-interets">Centres d'intérêt</h2>
-          <ul class="interests" role="list">
-            <li class="interests__item">
-              <details class="interests__details">
-                <summary class="interests__summary">
-                  🔍 Veille technologique
-                </summary>
-                <p class="interests__content">
-                  Suivi hebdomadaire de <cite>CSS-Tricks</cite>,
-                  <cite>MDN Blog</cite>, <cite>web.dev</cite>.
-                </p>
-              </details>
-            </li>
-            <li class="interests__item">
-              <details class="interests__details">
-                <summary class="interests__summary">
-                  🤝 Contribution open-source
-                </summary>
-                <p class="interests__content">
-                  Issues et <abbr title="Pull Request">PR</abbr> sur des projets
-                  d'accessibilité.
-                </p>
-              </details>
-            </li>
-            <li class="interests__item">
-              <details class="interests__details">
-                <summary class="interests__summary">
-                  📷 Photographie argentique
-                </summary>
-                <p class="interests__content">
-                  Développement photo en chambre noire — <var>ISO</var> 400,
-                  format <abbr title="24×36 millimètres">24×36</abbr>.
-                </p>
-              </details>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- TÉMOIGNAGES -->
-      <section
-        class="section"
-        id="temoignages"
-        aria-labelledby="titre-temoignages"
-      >
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-temoignages">Témoignages</h2>
-          <ul class="testimonials" role="list">
-            <li class="testimonials__item">
-              <figure class="testimonial">
-                <blockquote class="testimonial__quote">
-                  <p>
-                    Camille livre un code
-                    <mark>propre, accessible et documenté</mark>. Son autonomie
-                    sur les sujets de performance front est remarquable.
-                  </p>
-                </blockquote>
-                <figcaption class="testimonial__author">
-                  — <cite>Marc Lefèvre</cite>,
-                  <abbr title="Chief Technology Officer">CTO</abbr> chez Acme
-                  Corp
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonials__item">
-              <figure class="testimonial">
-                <blockquote class="testimonial__quote">
-                  <p>
-                    Une vraie rigueur sur l'accessibilité, rare dans les profils
-                    junior. Elle connaît les standards mieux que certains
-                    seniors.
-                  </p>
-                </blockquote>
-                <figcaption class="testimonial__author">
-                  — <cite>Sophie Martin</cite>, Lead dev chez Agence Pixel
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="section" id="contact" aria-labelledby="titre-contact">
-        <div class="section__inner">
-          <h2 class="section__title" id="titre-contact">Contact</h2>
-          <form
-            class="form"
-            action="#"
-            method="post"
-            novalidate
-            aria-describedby="form-desc"
-          >
-            <p id="form-desc">
-              <small
-                >Les champs marqués <abbr title="obligatoire">*</abbr> sont
-                requis.</small
-              >
-            </p>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Votre identité</legend>
-              <div class="form__field">
-                <label class="form__label" for="prenom"
-                  >Prénom
-                  <abbr title="obligatoire" aria-hidden="true">*</abbr></label
-                >
-                <input
-                  class="form__input"
-                  type="text"
-                  id="prenom"
-                  name="prenom"
-                  autocomplete="given-name"
-                  required
-                  aria-required="true"
-                  placeholder="Marie"
-                />
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="nom"
-                  >Nom
-                  <abbr title="obligatoire" aria-hidden="true">*</abbr></label
-                >
-                <input
-                  class="form__input"
-                  type="text"
-                  id="nom"
-                  name="nom"
-                  autocomplete="family-name"
-                  required
-                  aria-required="true"
-                  placeholder="Dupont"
-                />
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="email"
-                  >Email
-                  <abbr title="obligatoire" aria-hidden="true">*</abbr></label
-                >
-                <input
-                  class="form__input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                  aria-required="true"
-                  placeholder="marie@exemple.fr"
-                  aria-describedby="email-hint"
-                />
-                <small id="email-hint">Format : nom@domaine.fr</small>
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="tel">Téléphone</label>
-                <input
-                  class="form__input"
-                  type="tel"
-                  id="tel"
-                  name="tel"
-                  autocomplete="tel"
-                  placeholder="+33 6 …"
-                />
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Votre message</legend>
-              <div class="form__field">
-                <label class="form__label" for="sujet">Sujet</label>
-                <select class="form__select" id="sujet" name="sujet">
-                  <optgroup label="Opportunités">
-                    <option value="">— Choisir —</option>
-                    <option value="emploi">Proposition d'emploi</option>
-                    <option value="freelance">Mission freelance</option>
-                  </optgroup>
-                  <optgroup label="Autre">
-                    <option value="collaboration">Collaboration</option>
-                    <option value="autre">Autre</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="entreprise">Entreprise</label>
-                <input
-                  class="form__input"
-                  type="text"
-                  id="entreprise"
-                  name="entreprise"
-                  list="entreprises-suggestions"
-                  placeholder="Nom de votre structure"
-                />
-                <datalist id="entreprises-suggestions">
-                  <option value="Startup" />
-                  <option value="PME" />
-                  <option value="Grand groupe" />
-                  <option value="Agence web" />
-                </datalist>
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="message"
-                  >Message
-                  <abbr title="obligatoire" aria-hidden="true">*</abbr></label
-                >
-                <textarea
-                  class="form__textarea"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                  aria-required="true"
-                  maxlength="2000"
-                  placeholder="Votre message…"
-                ></textarea>
-              </div>
-            </fieldset>
-            <div class="form__actions">
-              <button class="btn btn--primary" type="submit">✉ Envoyer</button>
-              <button class="btn btn--secondary" type="reset">
-                Réinitialiser
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- MODALE :target CSS-only -->
-    <div
-      class="modal"
-      id="dialog-dl"
-      role="dialog"
-      aria-labelledby="dialog-titre"
-      aria-modal="true"
-    >
-      <div class="modal__overlay">
-        <article class="modal__box">
-          <header class="modal__header">
-            <h2 class="modal__title" id="dialog-titre">Télécharger le CV</h2>
-          </header>
-          <p>Choisir le format :</p>
-          <ul class="modal__list" role="list">
-            <li>
-              <a
-                href="assets/cv-camille-dupont.pdf"
-                download
-                aria-label="Télécharger le CV en PDF"
-                >📄 CV en PDF <small>(version imprimable)</small></a
-              >
-            </li>
-            <li>
-              <a href="index.html" aria-label="Voir le CV en version web"
-                >🌐 Version web <small>(cette page)</small></a
-              >
-            </li>
-          </ul>
-          <footer class="modal__footer">
-            <a
-              class="btn btn--secondary"
-              href="#"
-              aria-label="Fermer la fenêtre"
-              >Fermer</a
-            >
-          </footer>
-        </article>
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <div class="site-header__identity">
+      <picture>
+        <source srcset="assets/img/face.webp" type="image/webp"/>
+        <img
+          class="site-header__avatar"
+          src="assets/img/face.jpg"
+          alt=""
+          width="48"
+          height="48"
+          loading="eager"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="site-header__titles">
+        <h1 class="site-header__name">Camille <strong>Dupont</strong></h1>
+        <p class="site-header__subtitle">Développeuse web <abbr title="Front-End">FE</abbr></p>
       </div>
     </div>
+    <div class="theme-toggle">
+      <input type="checkbox" id="dark-toggle" role="switch" aria-label="Activer le mode sombre"/>
+      <label for="dark-toggle" title="Basculer le thème">🌙</label>
+    </div>
+    <nav class="nav-main" aria-label="Navigation principale">
+      <input type="checkbox" id="nav-toggle" class="nav-main__input" aria-label="Ouvrir le menu"/>
+      <label for="nav-toggle" class="nav-main__burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-main__list" role="list">
+        <li class="nav-main__item"><a class="nav-main__link" href="#apropos">À propos</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="#experiences">Expériences</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="#formations">Formations</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="#competences">Compétences</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="#projets">Projets</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <!-- FOOTER -->
-    <footer class="site-footer" role="contentinfo">
-      <div class="site-footer__inner">
-        <address class="site-footer__address">
-          Camille Dupont —
-          <a href="mailto:camille@dupont.dev">camille@dupont.dev</a> — Lyon,
-          France
-        </address>
-        <nav class="nav-footer" aria-label="Navigation secondaire">
-          <ul class="nav-footer__list" role="list">
-            <li class="nav-footer__item">
-              <a class="nav-footer__link" href="#">Lettre de motivation</a>
-            </li>
-            <li class="nav-footer__item">
-              <a class="nav-footer__link" href="#">Références</a>
-            </li>
-            <li class="nav-footer__item">
-              <a
-                class="nav-footer__link"
-                href="#main"
-                aria-label="Retour en haut de page"
-                >↑ Haut</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <hr class="site-footer__hr" />
-        <p class="site-footer__copy">
-          <small
-            >&copy; <time datetime="2025">2025</time> Camille Dupont — licence
-            <abbr title="MIT License">MIT</abbr> — 0 JS · 0 framework</small
-          >
-        </p>
+<main id="main" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-titre">
+    <div class="hero__inner">
+      <div class="hero__photo">
+        <picture>
+          <source srcset="assets/img/face.webp" type="image/webp"/>
+          <img
+            class="hero__img"
+            src="assets/img/face.jpg"
+            alt="Portrait de Camille Dupont"
+            width="140"
+            height="140"
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+          />
+        </picture>
       </div>
-    </footer>
-  </body>
+      <div class="hero__text">
+        <h2 class="hero__title" id="hero-titre">Développeuse web <mark class="hero__mark">front-end</mark></h2>
+        <p class="hero__lead">HTML5 sémantique · CSS3 natif · Zéro dépendance inutile</p>
+        <ul class="hero__badges" role="list">
+          <li class="badge">Lighthouse 100</li>
+          <li class="badge">WCAG AA</li>
+          <li class="badge">Flexbox</li>
+          <li class="badge">CSS-only tricks</li>
+          <li class="badge">Open source</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCORE LIGHTHOUSE -->
+  <section class="section section--lh" aria-labelledby="lh-titre">
+    <div class="section__inner">
+      <h2 class="section__title section__title--sm" id="lh-titre">Score Lighthouse</h2>
+      <div class="lighthouse" role="img" aria-label="Score Lighthouse : 100 en Performance, Accessibilité, Bonnes pratiques et SEO">
+        <div class="lighthouse__score"><div class="lighthouse__circle">100</div><span class="lighthouse__label">Performance</span></div>
+        <div class="lighthouse__score"><div class="lighthouse__circle">100</div><span class="lighthouse__label">Accessibilité</span></div>
+        <div class="lighthouse__score"><div class="lighthouse__circle">100</div><span class="lighthouse__label">Bonnes pratiques</span></div>
+        <div class="lighthouse__score"><div class="lighthouse__circle">100</div><span class="lighthouse__label">SEO</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="section" id="apropos" aria-labelledby="titre-apropos">
+    <div class="section__inner section__inner--row">
+      <aside class="contact-card">
+        <address class="contact-card__address">
+          <ul class="contact-card__list" role="list">
+            <li class="contact-card__item"><a href="mailto:camille@dupont.dev" aria-label="Email de Camille Dupont">📧 camille@dupont.dev</a></li>
+            <li class="contact-card__item"><a href="tel:+33612345678" aria-label="Téléphone de Camille Dupont">📱 +33 6 12 34 56 78</a></li>
+            <li class="contact-card__item">📍 Lyon, France</li>
+            <li class="contact-card__item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub (nouvelle fenêtre)">🐙 GitHub</a></li>
+            <li class="contact-card__item"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (nouvelle fenêtre)">💼 LinkedIn</a></li>
+          </ul>
+        </address>
+        <a class="btn btn--primary" href="#dialog-dl" aria-label="Ouvrir la fenêtre de téléchargement du CV">⬇ Télécharger le CV</a>
+      </aside>
+      <article class="about" aria-labelledby="titre-apropos">
+        <h2 class="section__title" id="titre-apropos">À propos</h2>
+        <p>Développeuse front-end passionnée par les <mark>standards web ouverts</mark>, l'accessibilité et les performances natives. Zéro framework superflu : <strong>HTML5, CSS3, JavaScript vanilla</strong>.</p>
+        <blockquote class="quote" cite="https://www.w3.org/TR/html-design-principles/">
+          <p><q>Le web doit être accessible à tous, quelles que soient les capacités ou le contexte.</q></p>
+          <footer class="quote__footer">— <cite>W3C Design Principles</cite></footer>
+        </blockquote>
+        <p>Convaincue que la maîtrise des <dfn>standards natifs</dfn> est plus durable que la maîtrise d'un framework. Chaque projet est une opportunité de prouver qu'on peut faire <em>mieux avec moins</em>.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCES -->
+  <section class="section" id="experiences" aria-labelledby="titre-exp">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-exp">Expériences</h2>
+      <ol class="timeline" role="list">
+        <li class="timeline__item">
+          <article class="timeline__card">
+            <header class="timeline__header">
+              <h3 class="timeline__role">Développeuse front-end — <span>Acme Corp</span></h3>
+              <p class="timeline__meta">
+                <time datetime="2022-03">Mars 2022</time> –
+                <time datetime="2024-12">Décembre 2024</time>
+                <small>(Lyon · <abbr title="Télétravail 3 jours sur 5">remote 3j/5</abbr>)</small>
+              </p>
+            </header>
+            <details class="timeline__details">
+              <summary class="timeline__summary">Voir les missions</summary>
+              <ul class="timeline__missions">
+                <li>Intégration <abbr title="HyperText Markup Language 5">HTML5</abbr>/<abbr title="Cascading Style Sheets 3">CSS3</abbr> de maquettes Figma</li>
+                <li>Audit accessibilité <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 AA</li>
+                <li>Réduction du <abbr title="Largest Contentful Paint">LCP</abbr> de <del>4,2 s</del> à <ins>1,1 s</ins></li>
+                <li>Mise en place de <code>@layer</code> + variables CSS pour toute la design system</li>
+              </ul>
+            </details>
+          </article>
+        </li>
+        <li class="timeline__item">
+          <article class="timeline__card">
+            <header class="timeline__header">
+              <h3 class="timeline__role">Intégratrice web — Agence Pixel</h3>
+              <p class="timeline__meta">
+                <time datetime="2020-09">Sept. 2020</time> –
+                <time datetime="2022-02">Fév. 2022</time>
+                <small>(Lyon)</small>
+              </p>
+            </header>
+            <details class="timeline__details">
+              <summary class="timeline__summary">Voir les missions</summary>
+              <ul class="timeline__missions">
+                <li>Création de templates email <abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li>Responsive design mobile-first, <var>breakpoints</var> avec <code>clamp()</code></li>
+                <li>Maintenance et évolution de sites <abbr title="Content Management System">CMS</abbr></li>
+              </ul>
+            </details>
+          </article>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FORMATIONS -->
+  <section class="section" id="formations" aria-labelledby="titre-form">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-form">Formations</h2>
+      <dl class="formations">
+        <div class="formations__item">
+          <dt class="formations__year"><time datetime="2020">2020</time> — <abbr title="Développeur Web et Web Mobile">DWWM</abbr></dt>
+          <dd class="formations__detail"><cite>AFPA Lyon</cite> — titre professionnel niveau 5 <small>(Bac+2 équivalent)</small></dd>
+        </div>
+        <div class="formations__item">
+          <dt class="formations__year"><time datetime="2019">2019</time> — Baccalauréat <abbr title="Sciences et Technologies du Management et de la Gestion">STMG</abbr></dt>
+          <dd class="formations__detail"><cite>Lycée Jean Moulin, Lyon</cite> — mention Bien</dd>
+        </div>
+        <div class="formations__item">
+          <dt class="formations__year"><time datetime="2023">2023</time> — Certification <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1</dt>
+          <dd class="formations__detail"><cite>Access42</cite> — audit et conception accessible</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="section" id="competences" aria-labelledby="titre-comp">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-comp">Compétences</h2>
+
+      <h3 class="section__subtitle">Techniques</h3>
+      <dl class="skills">
+        <div class="skills__item">
+          <dt class="skills__name"><dfn>HTML5</dfn></dt>
+          <dd class="skills__bar">
+            <label for="skill-html" class="sr-only">Niveau HTML5 : 95 sur 100</label>
+            <meter id="skill-html" min="0" max="100" value="95" low="40" high="70" optimum="100">95%</meter>
+            <output class="skills__output" for="skill-html">95 / 100</output>
+          </dd>
+        </div>
+        <div class="skills__item">
+          <dt class="skills__name"><dfn>CSS3</dfn></dt>
+          <dd class="skills__bar">
+            <label for="skill-css" class="sr-only">Niveau CSS3 : 90 sur 100</label>
+            <meter id="skill-css" min="0" max="100" value="90" low="40" high="70" optimum="100">90%</meter>
+            <output class="skills__output" for="skill-css">90 / 100</output>
+          </dd>
+        </div>
+        <div class="skills__item">
+          <dt class="skills__name">JavaScript</dt>
+          <dd class="skills__bar">
+            <label for="skill-js" class="sr-only">Niveau JavaScript : 75 sur 100</label>
+            <meter id="skill-js" min="0" max="100" value="75" low="40" high="70" optimum="100">75%</meter>
+            <output class="skills__output" for="skill-js">75 / 100</output>
+          </dd>
+        </div>
+        <div class="skills__item">
+          <dt class="skills__name">Git</dt>
+          <dd class="skills__bar">
+            <label for="skill-git" class="sr-only">Niveau Git : 80 sur 100</label>
+            <meter id="skill-git" min="0" max="100" value="80" low="40" high="70" optimum="100">80%</meter>
+            <output class="skills__output" for="skill-git">80 / 100</output>
+          </dd>
+        </div>
+      </dl>
+
+      <h3 class="section__subtitle">Langues</h3>
+      <table class="lang-table">
+        <caption class="lang-table__caption">Niveaux selon le <abbr title="Cadre Européen Commun de Référence pour les Langues">CECRL</abbr></caption>
+        <colgroup>
+          <col class="lang-table__col lang-table__col--lang"/>
+          <col class="lang-table__col lang-table__col--level"/>
+          <col class="lang-table__col lang-table__col--detail"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Langue</th>
+            <th scope="col">Niveau</th>
+            <th scope="col">Détail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Français</td>
+            <td><abbr title="Langue maternelle">C2</abbr></td>
+            <td>Langue maternelle</td>
+          </tr>
+          <tr>
+            <td>Anglais</td>
+            <td><abbr title="Autonome">B2</abbr></td>
+            <td>Lu, écrit, parlé — technique courant</td>
+          </tr>
+          <tr>
+            <td>Espagnol</td>
+            <td><abbr title="Utilisateur élémentaire">A2</abbr></td>
+            <td>Notions scolaires</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><small>Référentiel : <cite>Conseil de l'Europe</cite></small></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section" id="projets" aria-labelledby="titre-proj">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-proj">Projets</h2>
+      <ul class="cards" role="list">
+        <li class="cards__item">
+          <article class="card" aria-labelledby="proj-1-titre">
+            <figure class="card__figure">
+              <div class="card__placeholder card__placeholder--purple" aria-hidden="true">🌐</div>
+              <figcaption class="card__figcaption">Score Lighthouse : 100/100/100/100</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title" id="proj-1-titre">Ce CV en ligne</h3>
+              <p class="card__desc">HTML5 sémantique, CSS3 natif, <abbr title="zéro">0</abbr> dépendance.</p>
+              <ul class="tags" role="list">
+                <li class="tags__item"><kbd>HTML5</kbd></li>
+                <li class="tags__item"><kbd>Flexbox</kbd></li>
+                <li class="tags__item"><kbd>a11y</kbd></li>
+              </ul>
+              <a class="card__link" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Code source sur GitHub (nouvelle fenêtre)">Voir le code →</a>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="card" aria-labelledby="proj-2-titre">
+            <figure class="card__figure">
+              <div class="card__placeholder card__placeholder--pink" aria-hidden="true">✅</div>
+              <figcaption class="card__figcaption">Application vanilla JS — localStorage</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title" id="proj-2-titre">TaskFlow</h3>
+              <p class="card__desc">Gestionnaire de tâches <abbr title="Single Page Application">SPA</abbr> vanilla.</p>
+              <ul class="tags" role="list">
+                <li class="tags__item"><kbd>JavaScript</kbd></li>
+                <li class="tags__item"><kbd>localStorage</kbd></li>
+                <li class="tags__item"><kbd>Drag &amp; Drop</kbd></li>
+              </ul>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="card" aria-labelledby="proj-3-titre">
+            <figure class="card__figure">
+              <div class="card__placeholder card__placeholder--green" aria-hidden="true">🔒</div>
+              <figcaption class="card__figcaption">Outil en ligne de commande Node.js</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title" id="proj-3-titre">md2pdf</h3>
+              <p class="card__desc">Convertit du Markdown en <abbr title="Portable Document Format">PDF</abbr> protégé.</p>
+              <ul class="tags" role="list">
+                <li class="tags__item"><kbd>Node.js</kbd></li>
+                <li class="tags__item"><kbd>Playwright</kbd></li>
+                <li class="tags__item"><kbd>AES-256</kbd></li>
+              </ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CENTRES D'INTÉRÊT -->
+  <section class="section" id="interets" aria-labelledby="titre-interets">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-interets">Centres d'intérêt</h2>
+      <ul class="interests" role="list">
+        <li class="interests__item">
+          <details class="interests__details">
+            <summary class="interests__summary">🔍 Veille technologique</summary>
+            <p class="interests__content">Suivi hebdomadaire de <cite>CSS-Tricks</cite>, <cite>MDN Blog</cite>, <cite>web.dev</cite>.</p>
+          </details>
+        </li>
+        <li class="interests__item">
+          <details class="interests__details">
+            <summary class="interests__summary">🤝 Contribution open-source</summary>
+            <p class="interests__content">Issues et <abbr title="Pull Request">PR</abbr> sur des projets d'accessibilité.</p>
+          </details>
+        </li>
+        <li class="interests__item">
+          <details class="interests__details">
+            <summary class="interests__summary">📷 Photographie argentique</summary>
+            <p class="interests__content">Développement photo en chambre noire — <var>ISO</var> 400, format <abbr title="24×36 millimètres">24×36</abbr>.</p>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="section" id="temoignages" aria-labelledby="titre-temoignages">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-temoignages">Témoignages</h2>
+      <ul class="testimonials" role="list">
+        <li class="testimonials__item">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              <p>Camille livre un code <mark>propre, accessible et documenté</mark>. Son autonomie sur les sujets de performance front est remarquable.</p>
+            </blockquote>
+            <figcaption class="testimonial__author">— <cite>Marc Lefèvre</cite>, <abbr title="Chief Technology Officer">CTO</abbr> chez Acme Corp</figcaption>
+          </figure>
+        </li>
+        <li class="testimonials__item">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              <p>Une vraie rigueur sur l'accessibilité, rare dans les profils junior. Elle connaît les standards mieux que certains seniors.</p>
+            </blockquote>
+            <figcaption class="testimonial__author">— <cite>Sophie Martin</cite>, Lead dev chez Agence Pixel</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" aria-labelledby="titre-contact">
+    <div class="section__inner">
+      <h2 class="section__title" id="titre-contact">Contact</h2>
+      <form class="form" action="#" method="post" novalidate aria-describedby="form-desc">
+        <p id="form-desc"><small>Les champs marqués <abbr title="obligatoire">*</abbr> sont requis.</small></p>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Votre identité</legend>
+          <div class="form__field">
+            <label class="form__label" for="prenom">Prénom <abbr title="obligatoire" aria-hidden="true">*</abbr></label>
+            <input class="form__input" type="text" id="prenom" name="prenom" autocomplete="given-name" required aria-required="true" placeholder="Marie"/>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="nom">Nom <abbr title="obligatoire" aria-hidden="true">*</abbr></label>
+            <input class="form__input" type="text" id="nom" name="nom" autocomplete="family-name" required aria-required="true" placeholder="Dupont"/>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email <abbr title="obligatoire" aria-hidden="true">*</abbr></label>
+            <input class="form__input" type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="marie@exemple.fr" aria-describedby="email-hint"/>
+            <small id="email-hint">Format : nom@domaine.fr</small>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="tel">Téléphone</label>
+            <input class="form__input" type="tel" id="tel" name="tel" autocomplete="tel" placeholder="+33 6 …"/>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Votre message</legend>
+          <div class="form__field">
+            <label class="form__label" for="sujet">Sujet</label>
+            <select class="form__select" id="sujet" name="sujet">
+              <optgroup label="Opportunités">
+                <option value="">— Choisir —</option>
+                <option value="emploi">Proposition d'emploi</option>
+                <option value="freelance">Mission freelance</option>
+              </optgroup>
+              <optgroup label="Autre">
+                <option value="collaboration">Collaboration</option>
+                <option value="autre">Autre</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="entreprise">Entreprise</label>
+            <input class="form__input" type="text" id="entreprise" name="entreprise" list="entreprises-suggestions" placeholder="Nom de votre structure"/>
+            <datalist id="entreprises-suggestions">
+              <option value="Startup"/>
+              <option value="PME"/>
+              <option value="Grand groupe"/>
+              <option value="Agence web"/>
+            </datalist>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="message">Message <abbr title="obligatoire" aria-hidden="true">*</abbr></label>
+            <textarea class="form__textarea" id="message" name="message" rows="5" required aria-required="true" maxlength="2000" placeholder="Votre message…"></textarea>
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">✉ Envoyer</button>
+          <button class="btn btn--secondary" type="reset">Réinitialiser</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODALE :target CSS-only -->
+<div class="modal" id="dialog-dl" role="dialog" aria-labelledby="dialog-titre" aria-modal="true">
+  <div class="modal__overlay">
+    <article class="modal__box">
+      <header class="modal__header">
+        <h2 class="modal__title" id="dialog-titre">Télécharger le CV</h2>
+      </header>
+      <p>Choisir le format :</p>
+      <ul class="modal__list" role="list">
+        <li><a href="assets/cv-camille-dupont.pdf" download aria-label="Télécharger le CV en PDF">📄 CV en PDF <small>(version imprimable)</small></a></li>
+        <li><a href="index.html" aria-label="Voir le CV en version web">🌐 Version web <small>(cette page)</small></a></li>
+      </ul>
+      <footer class="modal__footer">
+        <a class="btn btn--secondary" href="#" aria-label="Fermer la fenêtre">Fermer</a>
+      </footer>
+    </article>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <address class="site-footer__address">
+      Camille Dupont — <a href="mailto:camille@dupont.dev">camille@dupont.dev</a> — Lyon, France
+    </address>
+    <nav class="nav-footer" aria-label="Navigation secondaire">
+      <ul class="nav-footer__list" role="list">
+        <li class="nav-footer__item"><a class="nav-footer__link" href="#">Lettre de motivation</a></li>
+        <li class="nav-footer__item"><a class="nav-footer__link" href="#">Références</a></li>
+        <li class="nav-footer__item"><a class="nav-footer__link" href="#main" aria-label="Retour en haut de page">↑ Haut</a></li>
+      </ul>
+    </nav>
+    <hr class="site-footer__hr"/>
+    <p class="site-footer__copy"><small>&copy; <time datetime="2025">2025</time> Camille Dupont — licence <abbr title="MIT License">MIT</abbr> — 0 JS · 0 framework</small></p>
+  </div>
+</footer>
+
+</body>
 </html>
