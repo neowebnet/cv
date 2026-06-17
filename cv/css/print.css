@@ -1,0 +1,117 @@
+@media print {
+
+  /* Masquer ce qui ne s'imprime pas */
+  header[role="banner"],
+  nav,
+  .theme-toggle,
+  .skip-link,
+  .sidebar-contact button,
+  .video-wrapper video,
+  dialog,
+  button,
+  form,
+  .nav-toggle-label,
+  .noscript-warning {
+    display: none !important;
+  }
+
+  /* Reset couleurs */
+  :root {
+    --color-bg:      #ffffff;
+    --color-surface: #ffffff;
+    --color-text:    #000000;
+    --color-accent:  #000000;
+    --color-border:  #cccccc;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Pas de coupure dans les blocs importants */
+  section,
+  article,
+  .card,
+  .timeline > li,
+  .dl-group,
+  blockquote,
+  figure,
+  table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Layout print : une colonne */
+  .section-inner,
+  #apropos .section-inner {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #apropos aside {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* En-tête print */
+  main::before {
+    content: "Camille Dupont — Développeuse web front-end";
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Afficher les URLs des liens */
+  a[href^="http"]::after,
+  a[href^="mailto"]::after,
+  a[href^="tel"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* Supprimer les effets inutiles */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Cards en liste */
+  .cards {
+    display: block;
+  }
+
+  .cards .card {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+
+  /* Table propre */
+  th { background: #f0f0f0; }
+
+  /* Footer print */
+  footer[role="contentinfo"] {
+    border-top: 1pt solid #000;
+    padding-top: 0.5rem;
+    font-size: 9pt;
+  }
+
+  nav[aria-label="Navigation secondaire"] {
+    display: none;
+  }
+}
